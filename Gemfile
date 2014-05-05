@@ -20,3 +20,8 @@ group :development do
   gem 'meta_request'
   gem 'debugger'
 end
+
+group :development, :test do
+  # Temporarily pull from GitHub until RC1 is released.
+  gem 'rspec-rails', '~> 3.0.0.beta', github: 'rspec/rspec-rails', branch: 'master'
+end
