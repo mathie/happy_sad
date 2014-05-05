@@ -23,5 +23,7 @@ end
 
 group :development, :test do
   # Temporarily pull from GitHub until RC1 is released.
-  gem 'rspec-rails', '~> 3.0.0.beta', github: 'rspec/rspec-rails', branch: 'master'
+  [ :core, :support, :rails ].each do |component|
+    gem "rspec-#{component}", '~> 3.0.0.beta', github: "rspec/rspec-#{component}", branch: 'master'
+  end
 end

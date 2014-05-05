@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/rspec/rspec-core.git
+  revision: 490bb145f83e97ee0632e42cffe2775412e468fe
+  branch: master
+  specs:
+    rspec-core (3.0.0.beta2)
+      rspec-support (= 3.0.0.beta2)
+
+GIT
   remote: git://github.com/rspec/rspec-rails.git
   revision: 63d1422123871c1d3ba2ac21ec8cdd581fd5c96d
   branch: master
@@ -11,6 +19,13 @@ GIT
       rspec-expectations (= 3.0.0.beta2)
       rspec-mocks (= 3.0.0.beta2)
       rspec-support (= 3.0.0.beta2)
+
+GIT
+  remote: git://github.com/rspec/rspec-support.git
+  revision: 5225b14dd23e1cbe60f3bd772f912f53c72d36b3
+  branch: master
+  specs:
+    rspec-support (3.0.0.beta2)
 
 GEM
   remote: https://rubygems.org/
@@ -116,14 +131,11 @@ GEM
     rake (10.3.1)
     rdoc (4.1.1)
       json (~> 1.4)
-    rspec-core (3.0.0.beta2)
-      rspec-support (= 3.0.0.beta2)
     rspec-expectations (3.0.0.beta2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (= 3.0.0.beta2)
     rspec-mocks (3.0.0.beta2)
       rspec-support (= 3.0.0.beta2)
-    rspec-support (3.0.0.beta2)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -172,7 +184,9 @@ DEPENDENCIES
   pry-rails
   puma
   rails (~> 4.1.0)
+  rspec-core (~> 3.0.0.beta)!
   rspec-rails (~> 3.0.0.beta)!
+  rspec-support (~> 3.0.0.beta)!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
