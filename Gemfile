@@ -15,4 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
   gem 'spring'
+  gem 'pry-rails'
+  gem 'awesome_print', require: false
+  gem 'meta_request'
+  gem 'debugger'
 end
