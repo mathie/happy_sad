@@ -1,0 +1,17 @@
+--- !ruby/object:RDoc::Options
+# Required default options that haven't been changed -- rdoc doesn't work if
+# these aren't set to a sensible default (they get rehydrated as +nil+ but are
+# assumed to be initialised to these values).
+encoding: UTF-8
+static_path: []
+rdoc_include: []
+charset: UTF-8
+exclude: 
+hyperlink_all: false
+line_numbers: false
+template_stylesheets: []
+
+# Options that I've tweaked.
+main_page: README.rdoc
+tab_width: 2
+title: Happy/Sad
