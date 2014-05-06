@@ -16,3 +16,6 @@ guard 'rspec', cmd: 'bin/rspec' do
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
 end
 
+guard 'rake', :task => 'doc:app' do
+  watch(%r{^(app|lib)/(.+)\.rb$})
+end

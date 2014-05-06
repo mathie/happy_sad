@@ -104,6 +104,9 @@ GEM
     guard-bundler (2.0.0)
       bundler (~> 1.0)
       guard (~> 2.2)
+    guard-rake (0.0.9)
+      guard
+      rake
     guard-rspec (4.2.8)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
@@ -220,6 +223,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   debugger
   guard-bundler
+  guard-rake
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails

@@ -26,7 +26,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'listen'
 
-  [ :bundler, :rspec ].each do |component|
+  [ :bundler, :rspec, :rake ].each do |component|
     gem "guard-#{component}", require: false
   end
 
