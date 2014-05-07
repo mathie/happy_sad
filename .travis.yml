@@ -3,6 +3,9 @@ rvm:
   - 2.1.0
 addons:
   postgresql: "9.3"
+cache:
+  bundler: true
+  apt: true
 before_script:
   - mkdir -p tmp/cache
   - cp config/database.travis.yml config/database.yml
