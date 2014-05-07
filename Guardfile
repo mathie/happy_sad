@@ -17,5 +17,6 @@ guard 'rspec', cmd: 'bin/rspec' do
 end
 
 guard 'rake', :task => 'doc:app' do
+  watch('README.rdoc')
   watch(%r{^(app|lib)/(.+)\.rb$})
 end
