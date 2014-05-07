@@ -1,8 +1,15 @@
 source 'https://rubygems.org'
 
+# A single canonical source for the Ruby version, please.
+ruby File.read(File.expand_path('../.ruby-version', __FILE__)).chomp
+
 gem 'rails', '~> 4.1.0'
 gem 'pg'
+
 gem 'puma'
+
+# Best practice support for deploying to Heroku.
+gem 'rails_12factor', group: :production
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
