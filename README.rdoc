@@ -22,6 +22,9 @@ Here are some links to various services I'm using:
 * Travis CI is keeping me honest with testing:
   {<img src="https://travis-ci.org/mathie/happy_sad.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/mathie/happy_sad]
 
+* Gemnasium is keeping track of dependencies:
+  {<img src="https://gemnasium.com/mathie/happy_sad.svg" alt="Dependency Status" />}[https://gemnasium.com/mathie/happy_sad]
+
 === Development Setup
 
 This README would normally document whatever steps are necessary to get the
