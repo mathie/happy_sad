@@ -17,7 +17,7 @@ cache:
   bundler: true
   apt: true
 
-bundler_args: --without development,production
+bundler_args: --without development:production:doc
 
 before_script:
   - mkdir -p tmp/cache
