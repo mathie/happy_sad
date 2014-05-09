@@ -36,3 +36,7 @@ group :development do
   gem 'meta_request'
   gem 'debugger'
 end
+
+group :test do
+  gem 'codeclimate-test-reporter', require: false
+end
