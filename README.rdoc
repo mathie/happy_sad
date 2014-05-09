@@ -13,6 +13,8 @@ help me make better informed decisions about recovering. And partly it's
 getting back into a greenfield software development project, getting back up to
 speed with the latest and greatest in app development after a bit of a break.
 
+The current production application can be found at: http://www.happysadapp.com/
+
 === Getting Started
 
 Here are some links to various services I'm using:
