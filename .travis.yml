@@ -29,3 +29,6 @@ deploy:
   app: happysadapp
   api_key:
     secure: H1+lUhl4JX9TiTjh+vjRchDjUpCWZxzZrpF0OwisgbKJ4Nl9C00eJZ9mpUNDdgsR4VABOUciaelM/LQfDICJdw3q9lG1XbcGazb0xIt+Uqkq9JWKLwqrCTHDwtF0S/LLkDVYZir9NlsuDlPo5YOcEsByFaGejVssGx5i3cX1uLM=
+  run:
+    - "rake db:migrate"
+    - restart
