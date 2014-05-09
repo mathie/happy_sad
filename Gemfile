@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # A single canonical source for the Ruby version, please.
 ruby File.read(File.expand_path('../.ruby-version', __FILE__)).chomp
 
-gem 'rails', '~> 4.1.0'
+gem 'rails', '~> 4.1.1'
 gem 'pg'
 
 gem 'puma'
