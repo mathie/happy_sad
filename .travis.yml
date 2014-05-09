@@ -2,6 +2,12 @@ language: ruby
 rvm:
   - 2.1.0
 
+env:
+  - RAKE_TARGET=spec
+  - RAKE_TARGET=assets:precompile
+
+script: RAILS_ENV=test bin/rake ${RAKE_TARGET}
+
 addons:
   postgresql: "9.3"
   code_climate:
@@ -11,8 +17,9 @@ cache:
   bundler: true
   apt: true
 
+bundler_args: --without development:production:doc
+
 before_script:
   - mkdir -p tmp/cache
   - cp config/database.travis.yml config/database.yml
-  - bin/rake db:create:all
-  - bin/rake db:reset
+  - RAILS_ENV=test bin/rake db:reset

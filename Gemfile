@@ -3,10 +3,8 @@ source 'https://rubygems.org'
 # A single canonical source for the Ruby version, please.
 ruby File.read(File.expand_path('../.ruby-version', __FILE__)).chomp
 
-gem 'rails', '~> 4.1.0'
+gem 'rails', '~> 4.1.1'
 gem 'pg'
-
-gem 'puma'
 
 # Best practice support for deploying to Heroku.
 gem 'rails_12factor', group: :production
@@ -27,6 +25,10 @@ group :development, :test do
   [ :core, :support, :rails ].each do |component|
     gem "rspec-#{component}", '~> 3.0.0.beta2', github: "rspec/rspec-#{component}", branch: 'master'
   end
+end
+
+group :development, :production do
+  gem 'puma'
 end
 
 group :development do
