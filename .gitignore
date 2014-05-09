@@ -13,3 +13,6 @@
 
 # Ignore generated documentation
 /doc/app
+
+# Ignore generated code coverage information
+/coverage

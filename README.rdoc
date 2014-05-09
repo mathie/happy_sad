@@ -27,6 +27,9 @@ Here are some links to various services I'm using:
 * Gemnasium is keeping track of dependencies:
   {<img src="https://gemnasium.com/mathie/happy_sad.svg" alt="Dependency Status" />}[https://gemnasium.com/mathie/happy_sad]
 
+* Code Climate is tracking code quality metrics and test coverage:
+  {<img src="https://codeclimate.com/github/mathie/happy_sad.png" />}[https://codeclimate.com/github/mathie/happy_sad]
+
 === Development Setup
 
 This README would normally document whatever steps are necessary to get the
