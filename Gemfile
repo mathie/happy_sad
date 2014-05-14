@@ -43,7 +43,6 @@ group :development do
   gem 'pry-rails'
   gem 'awesome_print', require: false
   gem 'meta_request'
-  gem 'debugger'
 end
 
 group :test do
