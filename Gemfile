@@ -20,11 +20,12 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  # Temporarily pull from GitHub until RC1 is released.
-  gem "rspec", '~> 3.0.0.beta2', github: "rspec/rspec", branch: 'master'
-  [ :core, :support, :rails ].each do |component|
-    gem "rspec-#{component}", '~> 3.0.0.beta2', github: "rspec/rspec-#{component}", branch: 'master'
-  end
+  # FIXME: Need to explicitly depend upon rspec ~> 3.0.0.rc1 otherwise
+  # +guard-rspec+ gets upset and tries to install an older version (4.2.2).
+  # Setting a minimum dependency on +guard-rspec+ to (~> 4.2.7) doesn't solve
+  # the problem.
+  gem 'rspec', '~> 3.0.0.rc1'
+  gem 'rspec-rails', '~> 3.0.0.rc1'
 end
 
 group :development, :production do
