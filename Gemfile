@@ -34,7 +34,9 @@ end
 
 group :development do
   gem 'spring'
-  gem 'spring-commands-rspec'
+  [ :rspec, :cucumber ].each do |component|
+    gem "spring-commands-#{component}"
+  end
   gem 'listen'
 
   [ :bundler, :rspec, :rake ].each do |component|
