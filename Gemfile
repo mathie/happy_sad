@@ -48,4 +48,7 @@ end
 
 group :test do
   gem 'codeclimate-test-reporter', require: false
+
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
