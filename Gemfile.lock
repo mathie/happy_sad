@@ -81,6 +81,9 @@ GEM
     guard-bundler (2.0.0)
       bundler (~> 1.0)
       guard (~> 2.2)
+    guard-cucumber (1.4.1)
+      cucumber (>= 1.2.0)
+      guard (>= 1.1.0)
     guard-rake (0.0.9)
       guard
       rake
@@ -234,6 +237,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   guard-bundler
+  guard-cucumber
   guard-rake
   guard-rspec
   jbuilder (~> 2.0)

@@ -16,7 +16,13 @@ guard 'rspec', cmd: 'bin/rspec' do
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
 end
 
-guard 'rake', :task => 'doc:app' do
+guard 'cucumber', binstubs: true do
+  watch(%r{^features/.+\.feature$})
+  watch(%r{^features/support/(.+)\.rb$})                { 'features' }
+  watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
+end
+
+guard 'rake', task: 'doc:app' do
   watch('README.rdoc')
   watch(%r{^(app|lib)/(.+)\.rb$})
 end

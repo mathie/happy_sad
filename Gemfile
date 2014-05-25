@@ -39,7 +39,7 @@ group :development do
   end
   gem 'listen'
 
-  [ :bundler, :rspec, :rake ].each do |component|
+  [ :bundler, :rspec, :rake, :cucumber ].each do |component|
     gem "guard-#{component}", require: false
   end
 
