@@ -34,10 +34,12 @@ end
 
 group :development do
   gem 'spring'
-  gem 'spring-commands-rspec'
+  [ :rspec, :cucumber ].each do |component|
+    gem "spring-commands-#{component}"
+  end
   gem 'listen'
 
-  [ :bundler, :rspec, :rake ].each do |component|
+  [ :bundler, :rspec, :rake, :cucumber ].each do |component|
     gem "guard-#{component}", require: false
   end
 
@@ -48,4 +50,7 @@ end
 
 group :test do
   gem 'codeclimate-test-reporter', require: false
+
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end

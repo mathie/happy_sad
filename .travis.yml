@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1.2
 
-script: RAILS_ENV=test bin/rake spec assets:precompile assets:clean
+script: RAILS_ENV=test bin/rake spec cucumber:all assets:precompile assets:clean
 
 addons:
   postgresql: "9.3"
