@@ -30,6 +30,7 @@ end
 
 group :development, :production do
   gem 'puma'
+  gem 'newrelic_rpm'
 end
 
 group :development do
