@@ -2,7 +2,7 @@
 
 Right now, on a scale of 1 to 10, how happy are you?
 
-The goal of this web application is to track quantative data about your mental
+The goal of this web application is to track quantitative data about your mental
 health in order to allow you to make inferences to improve your quality of
 life, happiness, and productivity.
 
@@ -13,13 +13,24 @@ help me make better informed decisions about recovering. And partly it's
 getting back into a greenfield software development project, getting back up to
 speed with the latest and greatest in app development after a bit of a break.
 
-The current production application can be found at: http://www.happysadapp.com/
+The current production application can be found at:
+{Happy/Sad}[http://www.happysadapp.com/].
 
 === Getting Started
 
 Here are some links to various services I'm using:
 
 * The project is hosted on GitHub: {mathie/happy_sad}[https://github.com/mathie/happy_sad]
+
+* It's deployed to Heroku (Europe):
+  {happysadapp}[https://dashboard.heroku.com/apps/happysadapp]. Let me know if
+  you'd like access and I'll add you as a collaborator. The following add-ons
+  are set up (mostly because the Heroku Production Check suggested I should!) (mostly because the Heroku Production Check suggested I should!):
+
+  * PostgreSQL Ivory: {happysadapp}[https://postgres.heroku.com/databases/happysadapp-ivory]
+  * Automatic Pgbackups with one month retention.
+  * Papertrail for log monitoring: {Happy/Sad Papertrail}[https://papertrailapp.com/systems/happysadapp/events]
+  * New Relic for application monitoring: {Happy/Sad @ New Relic}[https://rpm.newrelic.com/accounts/689090/applications/3851973]
 
 * Travis CI is keeping me honest with testing:
   {<img src="https://travis-ci.org/mathie/happy_sad.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/mathie/happy_sad]
