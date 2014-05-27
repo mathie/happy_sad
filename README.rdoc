@@ -2,7 +2,7 @@
 
 Right now, on a scale of 1 to 10, how happy are you?
 
-The goal of this web application is to track quantative data about your mental
+The goal of this web application is to track quantitative data about your mental
 health in order to allow you to make inferences to improve your quality of
 life, happiness, and productivity.
 
@@ -25,7 +25,7 @@ Here are some links to various services I'm using:
 * It's deployed to Heroku (Europe):
   {happysadapp}[https://dashboard.heroku.com/apps/happysadapp]. Let me know if
   you'd like access and I'll add you as a collaborator. The following add-ons
-  are set up (mostly because the Heroku Production Check suggested I should!):
+  are set up (mostly because the Heroku Production Check suggested I should!) (mostly because the Heroku Production Check suggested I should!):
 
   * PostgreSQL Ivory: {happysadapp}[https://postgres.heroku.com/databases/happysadapp-ivory]
   * Automatic Pgbackups with one month retention.
