@@ -1,30 +1,27 @@
 language: ruby
 rvm:
-  - 2.1.2
-
+- 2.1.2
 script: RAILS_ENV=test bin/rake spec assets:precompile assets:clean
-
 addons:
-  postgresql: "9.3"
+  postgresql: '9.3'
   code_climate:
-    repo_token: "285312ea70ecd70b1f57eae62f9d9f4b53b5169928b9dba6645a28b45d1dbeea"
-
+    repo_token: 285312ea70ecd70b1f57eae62f9d9f4b53b5169928b9dba6645a28b45d1dbeea
 cache:
   bundler: true
   apt: true
-
-bundler_args: --without development:production:doc
-
+bundler_args: "--without development:production:doc"
 before_script:
-  - mkdir -p tmp/cache
-  - cp config/database.travis.yml config/database.yml
-  - RAILS_ENV=test bin/rake db:reset
-
+- mkdir -p tmp/cache
+- cp config/database.travis.yml config/database.yml
+- RAILS_ENV=test bin/rake db:reset
 deploy:
   provider: heroku
   app: happysadapp
   api_key:
     secure: H1+lUhl4JX9TiTjh+vjRchDjUpCWZxzZrpF0OwisgbKJ4Nl9C00eJZ9mpUNDdgsR4VABOUciaelM/LQfDICJdw3q9lG1XbcGazb0xIt+Uqkq9JWKLwqrCTHDwtF0S/LLkDVYZir9NlsuDlPo5YOcEsByFaGejVssGx5i3cX1uLM=
   run:
-    - "rake db:migrate"
-    - restart
+  - rake db:migrate
+  - restart
+notifications:
+  slack:
+    secure: SlIWFhahBYsI1Ttww5OTCcsEz4Qt/XgMJvLy9ziF6olaZJAKbCbVyBbHuBoX8d8k8GWO4B/OcpZdi4JgggJIxAbWjTRpyGgpLqf0Zqzf+ZOI6g/sTcBSxuf/tGJANGHg1Gq7Cr7H/bNgcB80o9hQNddgGVvJkbuzwk6DkDgjR0E=
